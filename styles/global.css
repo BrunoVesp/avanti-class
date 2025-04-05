@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
+
+:root {
+    --branco: #fff;
+    --azul: #005CFF;
+    --roxo: #6220c1;
+    --cinzaClaro: #DEDEDE;
+    --cinza: #E6E7E9;
+    --cinzaEscuro: #C2C2C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 80px 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    font-size: 16px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.botao {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: .4s;
+}
+
+.botao:hover {
+    background-color: #0040ae;
+}
+
+input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+}
+
+/* Tablet: */
+@media (min-width: 800px) {
+    .container {
+        padding: 0 36px;
+    }
+}
+
+/* DESKTOP: */
+@media (min-width: 1300px) {
+    .container {
+        padding: 0 200px;
+    }
+}

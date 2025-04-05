@@ -1,0 +1,205 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--branco);
+    z-index: 99;
+}
+
+/*Article: */
+.desconto {
+    background-color: var(--azul);
+    padding: 4px 0;
+    color: var(--branco);
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+
+.desconto .preco {
+    background-color: var(--roxo);
+    border-radius: 4px;
+    padding: 0px 4px;
+    margin: 0 4px;
+}
+
+.desconto .cupom {
+    font-weight: normal;
+    margin: 0 4px;
+}
+
+/*Container com logo, input de busca e perfil: */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.container .logo {
+    height: 27.08px;
+    width: 152.58px;
+}
+
+.container-busca {
+    display: none;
+}
+
+.container-perfil {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.container-perfil div {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-perfil div .notificacao {
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+/*Links de navegação mobile*/
+
+.container-itens {
+    display: none;
+}
+
+
+/* Campo Busca */
+
+.container-busca-desktop {
+    display: none;
+}
+
+.container-busca-mobile {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #DDD;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    margin: 12px 0;
+}
+
+.container-busca-mobile .input-busca {
+    width: 99%;
+    height: 100%;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.container-busca-mobile button {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.container-busca-mobile .icone-buscar {
+    background-color: var(--branco);
+    width: 100%;
+}
+
+.container-perfil .perfil {
+    display: none;
+}
+
+/* DESKTOP: */
+@media (min-width: 800px) {
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .container-itens {
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        font-size: 14px;
+    }
+
+    .item-menu {
+        font-weight: 700;
+    }
+
+    .menu-hamburguer {
+        width: 25px;
+        cursor: pointer;
+    }
+
+    .menu-hamburguer img {
+        width: 100%;
+    }
+
+    .container-perfil .perfil {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .container-busca-mobile {
+        display: none;
+    }
+
+    .container-busca-desktop {
+        width: 580px;
+        height: 40px;
+        border: 2px solid #DDD;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 12px;
+        margin: 12px 0;
+    }
+
+    .container-busca-desktop input {
+        width: 99%;
+        height: 100%;
+        padding: 6px 12px;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+    }
+
+    .container-busca-desktop button {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .container-busca-desktop .icone-buscar {
+        background-color: var(--branco);
+        width: 100%;
+    }
+}

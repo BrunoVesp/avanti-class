@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/carrossel.css">
+    <link rel="stylesheet" href="styles/banner-caneca.css">
+    <link rel="stylesheet" href="styles/banner-caneca2.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="stylesheet" href="styles/newsletter.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="js/search.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <title>Avanti Class</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <article class="desconto">
+            Ganhe <span class="preco"> R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span
+                class="cupom">DESCONTO10</span>
+        </article>
+
+        <div class="container logo-container">
+            <div class="menu-hamburguer">
+                <img src="icons/menu.png" alt="Menu">
+            </div>
+            <img src="images/logo.png" alt="Avanti" class="logo">
+            <form class="container-busca-desktop">
+                <input type="text" placeholder="Digite aqui o que você procura" class="input-busca"
+                    id="input-busca-desktop">
+                <button id="btn-busca-desktop"><img src="icons/search.png" alt="Buscar" class="icone-buscar"></button>
+            </form>
+            <div class="container-perfil">
+                <div class="perfil">
+                    <img src="icons/profile.png" alt="Perfil">
+                    Olá, nome cliente!
+                </div>
+                <div>
+                    <img src="icons/market.png" alt="Carrinho">
+                    <img src="icons/notification.png" alt="Notificações" class="notificacao">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form class="container-busca-mobile">
+                <input type="text" placeholder="Digite aqui o que você procura" class="input-busca"
+                    id="input-busca-mobile">
+                <button id="btn-busca-mobile"><img src="icons/search.png" alt="Buscar" class="icone-buscar"></button>
+            </form>
+        </div>
+        <div class="container">
+            <nav>
+                <ul class="container-itens">
+                    <li class="item item-menu">
+                        <a href="/" class="link-menu">
+                            <img src="icons/menu.png" alt="Menu">
+                            Todas as Categorias
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/">
+                            Departamento
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h2 id="resultado-busca" style="color: black; text-align: center;"></h2>
+    </header>
+
+    <section class="banner">
+        <div class="container-imagem">
+            <img src="images/banner-mobile.png" alt="Banner" class="banner-mobile">
+            <img src="images/banner-desktop.png" alt="Banner" class="banner-desktop">
+        </div>
+        <div class="container-textos">
+            <p class="primeiro"><span>super</span>sale</p>
+            <p class="segundo">Itens selecionados com até</p>
+            <p class="terceiro">50%off</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="container">
+            <article class="lancamentos">
+                <h2>Lançamentos</h2>
+                <a href="/">Ver mais</a>
+            </article>
+            <div class="carrossel">
+                <button class="botao-carrossel anterior">
+                    <img src="icons/left-arrow.png" alt="Anterior">
+                </button>
+                <div class="container-itens-carrossel">
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao-carrossel proximo">
+                    <img src="icons/rigth-arrow.png" alt="Próximo">
+                </button>
+            </div>
+        </section>
+
+        <section class="container caneca-container">
+            <div class="imagem-caneca-container">
+                <img src="images/banner-caneca1.png" alt="Caneca">
+            </div>
+            <article class="textos-banner">
+                <h1>Lorem ipsum</h1>
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
+                    eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                    pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia.
+                    Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a
+                    libero commodo egestas efficitur id augue.</p>
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
+                    eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                    pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia.
+                    Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a
+                    libero commodo egestas efficitur id augue.</p>
+            </article>
+        </section>
+
+        <section class="container caneca-container2">
+            <div class="container-banner-caneca2">
+                <img src="images/banner-caneca2.png" alt="Banner Ceneca 2">
+            </div>
+            <div class="container-infos-caneca2">
+                <h1>Lorem ipsum</h1>
+                <div class="info-caneca2">
+                    <img src="icons/local.png" alt="Marcador">
+                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                </div>
+                <div class="info-caneca2">
+                    <img src="icons/local.png" alt="Marcador">
+                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                </div>
+                <div class="info-caneca2">
+                    <img src="icons/local.png" alt="Marcador">
+                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container caneca-container">
+            <div class="imagem-caneca-container">
+                <img src="images/banner-caneca1.png" alt="Caneca">
+            </div>
+            <article class="textos-banner">
+                <h1>Lorem ipsum</h1>
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
+                    eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                    pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia.
+                    Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a
+                    libero commodo egestas efficitur id augue.</p>
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut
+                    eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                    pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia.
+                    Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a
+                    libero commodo egestas efficitur id augue.</p>
+            </article>
+        </section>
+
+        <section class="container">
+            <article class="lancamentos">
+                <h2>Lançamentos</h2>
+                <a href="/">Ver mais</a>
+            </article>
+            <div class="carrossel">
+                <button class="botao-carrossel anterior">
+                    <img src="icons/left-arrow.png" alt="Anterior">
+                </button>
+                <div class="container-itens-carrossel">
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="item-carrossel">
+                        <div class="container-imagem-carrosel">
+                            <img src="images/item.png" alt="Item">
+                        </div>
+                        <div class="textos-carrossel">
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="precos-item-carrosel">
+                                <div>
+                                    <p>R$ 100,00</p>
+                                    <strong>R$ 79,90</strong>
+                                </div>
+                                <article>
+                                    10% off
+                                </article>
+                            </div>
+                            <p class="parcelas-carrosel">Ou até <strong>10x de R$ 7,90</strong></p>
+                            <button class="botao">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="botao-carrossel proximo">
+                    <img src="icons/rigth-arrow.png" alt="Próximo">
+                </button>
+            </div>
+        </section>
+
+        <section class="background">
+            <div class="container container-contato">
+                <h1>Entre em contato conosco e verifique a disponibilidade para sua região!</h1>
+            </div>
+        </section>
+
+        <section class="container newsletter">
+            <h2>Cadastre-se na nossa <span>newsletter</span></h2>
+            <form class="formulario-newsletter">
+                <input class="input-newsletter" type="text" placeholder="Digite seu nome" required>
+                <input class="input-newsletter" type="email" placeholder="Digite seu e-mail" required>
+                <div class="container-checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Estou de acordo com a <a href="/">Política de Privacidade</a></label>
+                </div>
+                <button class="botao">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container footer">
+        <section class="container-links">
+            <div class="redes-sociais">
+                <img src="images/logo.png" alt="Avanti">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="icons/social-medias/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="icons/social-medias/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="icons/social-medias/youtube.png" alt="Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="icons/social-medias/tiktok.png" alt="Tiktok">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <div class="titulo-link">
+                    <h4>Institucional</h4>
+                    <img class="desativo" src="icons/down-arrow.png" alt="Baixo">
+                    <img class="ativo" src="icons/up-arrow.png" alt="Baixo">
+                </div>
+                <ul class="lista">
+                    <li>
+                        <h5>
+                            <a href="/">Sobre Nós</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">Nossas Lojas</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">Pirvacidade e Segurança</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">Termos e Condições</a>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <div class="titulo-link">
+                    <h4>Central de ajuda</h4>
+                    <img class="desativo" src="icons/down-arrow.png" alt="Baixo">
+                    <img class="ativo" src="icons/up-arrow.png" alt="Baixo">
+                </div>
+                <ul class="lista">
+                    <li>
+                        <h5>
+                            <a href="/">Fale Conosco</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">Frete e Entrega</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">Trocas e Devoluções</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">Formas de Pagamento</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="/">FAQ</a>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <div class="titulo-link">
+                    <h4>Atendimento</h4>
+                    <img class="desativo" src="icons/down-arrow.png" alt="Baixo">
+                    <img class="ativo" src="icons/up-arrow.png" alt="Baixo">
+                </div>
+                <ul class="lista lista-contatos">
+                    <li>
+                        <h5>Telefone:</h5>
+                        <p>(00) 1234-5678</p>
+                    </li>
+                    <li>
+                        <h5>E-mail:</h5>
+                        <p>exemplo@exemplo.com.br</p>
+                    </li>
+                    <li>
+                        <h5>Horário de atendimento:</h5>
+                        <p>Segunda a Sábado: 07h00 às 23h00</p>
+                        <p>Domingos e Feriados: 07h00 às 21h00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <ul class="lista-imagens-footer">
+                <li>
+                    <img src="icons/payment/amex.png" alt="Amex">
+                </li>
+                <li>
+                    <img src="icons/payment/mastercard.png" alt="Mastercard">
+                </li>
+                <li>
+                    <img src="icons/payment/visa.png" alt="Visa">
+                </li>
+                <li>
+                    <img src="icons/payment/hipercard.png" alt="Hipercard">
+                </li>
+                <li>
+                    <img src="icons/payment/elo.png" alt="Elo">
+                </li>
+                <li>
+                    <img src="icons/payment/pagamento.png" alt="Forma">
+                </li>
+                <li>
+                    <img src="icons/payment/paypal.png" alt="PayPal">
+                </li>
+                <li>
+                    <img src="icons/payment/pix.png" alt="Pix">
+                </li>
+                <li>
+                    <img src="icons/payment/boleto.png" alt="Boleto">
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <article class="footer-final">
+        <div class="container finals">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi.</p>
+            <ul class="lista-imagens-footer">
+                <li>
+                    <img src="images/plataforms/lets-encrypt.png" alt="lets-encrypt">
+                </li>
+                <li>
+                    <img src="images/plataforms/vtex.png" alt="Vtex">
+                </li>
+                <li>
+                    <img src="images/plataforms/avanti-mini.png" alt="Avanti">
+                </li>
+                <li>
+                    <img src="images/plataforms/vtex2.png" alt="Vtex">
+                </li>
+            </ul>
+        </div>
+    </article>
+</body>
+
+</html>

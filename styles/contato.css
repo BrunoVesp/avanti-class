@@ -1,0 +1,33 @@
+.background {
+    width: 100%;
+    height: 660px;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.container-contato {
+    width: 100%;
+    height: 132px;
+    background-color: var(--azul);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-contato h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (min-width: 800px) {
+    .container-contato h1 {
+        font-size: 30px;
+    }
+}

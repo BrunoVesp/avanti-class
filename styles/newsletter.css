@@ -1,0 +1,63 @@
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.newsletter h2 span {
+    color: var(--azul);
+}
+
+.formulario-newsletter {
+    background-color: var(--cinza);
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 36px 16px;
+}
+
+.input-newsletter {
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 0 24px;
+}
+
+.container-checkbox {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-checkbox label a {
+    text-decoration: underline;
+}
+
+.formulario-newsletter .botao {
+    width: 100%;
+}
+
+/* DESKTOP: */
+@media (min-width: 800px) {
+    .formulario-newsletter {
+        flex-direction: row;
+        height: 176px;
+    }
+
+    .input-newsletter {
+        width: 280px;
+    }
+
+    .formulario-newsletter .botao {
+        width: auto;
+    }
+}
