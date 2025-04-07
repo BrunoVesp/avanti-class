@@ -124,6 +124,22 @@
     display: none;
 }
 
+.container-itens .item {
+    font-weight: 700;
+}
+
+.container-itens .item a:hover {
+    text-decoration: none;
+}
+
+.container-menu-hover {
+    display: none;
+}
+
+.container-menu-departamento {
+    display: none;
+}
+
 /* DESKTOP: */
 @media (min-width: 800px) {
     .menu-hamburguer {
@@ -142,7 +158,7 @@
         font-size: 14px;
     }
 
-    .item-menu {
+    .todas-as-categorias {
         font-weight: 700;
     }
 
@@ -201,5 +217,87 @@
     .container-busca-desktop .icone-buscar {
         background-color: var(--branco);
         width: 100%;
+    }
+
+    /*Menu oculto: */
+    .container-menu-departamento,
+    .container-menu-hover {
+        height: 329px;
+    }
+
+    .menu-hover {
+        display: flex;
+    }
+
+    .menu-hover .lista-menu-hover {
+        width: 180px;
+        padding: 14px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu-hover .lista-overflow {
+        width: 234px;
+        background-color: #F5F5F5;
+        overflow-y: auto;
+    }
+
+    .menu-hover .lista-overflow .item-menu-oculto {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .menu-hover .lista-menu-hover .item-destacado {
+        color: var(--azul);
+        font-weight: 700;
+    }
+
+    .caneca-cabecalho {
+        width: 236px;
+        height: 298px;
+        border-radius: 10px;
+        background-image: url('../images/caneca-cabecalho.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .caneca-cabecalho .gradiente {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #00000000, #000000BF);
+        display: flex;
+        align-items: center;
+    }
+
+    .caneca-cabecalho .gradiente .conteudo {
+        margin-left: 24px;
+        width: 127.43px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .caneca-cabecalho .gradiente .conteudo h2 {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .caneca-cabecalho .gradiente .conteudo h2 span {
+        font-weight: 400;
+    }
+
+    .caneca-cabecalho .gradiente .conteudo button {
+        background-color: #00000000;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-size: 12px;
+        cursor: pointer;
     }
 }
