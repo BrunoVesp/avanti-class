@@ -73,6 +73,16 @@
     justify-content: space-between;
 }
 
+.container-imagem-carrosel .novo {
+    background-color: #00264E;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+
 .container-imagem-carrosel img {
     width: 100%;
 }
