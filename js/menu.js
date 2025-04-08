@@ -1,3 +1,18 @@
+//Menu Mobile:
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const sideMenu = document.getElementById("side-menu");
+
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+    sideMenu.classList.remove("show");
+});
+
+
+//Menu Desktop:
 const todasAsCategorias = document.getElementById("todas-as-categorias");
 const containerMenuHover = document.getElementById("container-menu-hover");
 
